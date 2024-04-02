@@ -25,3 +25,13 @@ documentation at https://polaris.shopify.com/patterns/date-picking/single-date
     - Your component should meet the usability guidelines from polaris
     - You should update this readme explaining what usability features and capabilities you have implemented
     - You should be prepared to discuss your changes in detail and explain why they are great.
+
+
+## Features and capabilities
+
+Added a single date picker component which allows users to select a date.
+
+## Test
+
+To run the unit tests run the following command in react directory:
+`yarn test`
