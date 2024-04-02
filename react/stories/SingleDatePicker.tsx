@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   AppProvider,
   BlockStack,
@@ -9,6 +9,7 @@ import {
   Popover,
   TextField,
 } from "@shopify/polaris";
+import en from "@shopify/polaris/locales/en.json";
 import "@shopify/polaris/build/esm/styles.css";
 import { CalendarIcon } from "@shopify/polaris-icons";
 
@@ -64,24 +65,7 @@ export const SingleDatePicker = ({
     }
   }, [selectedDate]);
   return (
-    <AppProvider
-      i18n={{
-        Polaris: {
-          ResourceList: {
-            sortingLabel: "Sort by",
-            defaultItemSingular: "item",
-            defaultItemPlural: "items",
-            showing: "Showing {itemsCount} {resource}",
-            Item: {
-              viewItem: "View details for {itemName}",
-            },
-          },
-          Common: {
-            checkbox: "checkbox",
-          },
-        },
-      }}
-    >
+    <AppProvider i18n={en}>
       <BlockStack inlineAlign="center" gap="400">
         <Box minWidth="276px" padding={{ xs: "200" }}>
           <Popover
